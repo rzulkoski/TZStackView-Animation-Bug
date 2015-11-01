@@ -12,6 +12,10 @@
 		94C67DCC1BE69A6E00BC120F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C67DCA1BE69A6E00BC120F /* Main.storyboard */; };
 		94C67DCE1BE69A6E00BC120F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C67DCD1BE69A6E00BC120F /* Assets.xcassets */; };
 		94C67DD11BE69A6E00BC120F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C67DCF1BE69A6E00BC120F /* LaunchScreen.storyboard */; };
+		94C67DDE1BE69B5800BC120F /* TZSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C67DD91BE69B5800BC120F /* TZSpacerView.swift */; };
+		94C67DDF1BE69B5800BC120F /* TZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C67DDB1BE69B5800BC120F /* TZStackView.swift */; };
+		94C67DE01BE69B5800BC120F /* TZStackViewAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C67DDC1BE69B5800BC120F /* TZStackViewAlignment.swift */; };
+		94C67DE11BE69B5800BC120F /* TZStackViewDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C67DDD1BE69B5800BC120F /* TZStackViewDistribution.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,11 @@
 		94C67DCD1BE69A6E00BC120F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94C67DD01BE69A6E00BC120F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94C67DD21BE69A6E00BC120F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C67DD91BE69B5800BC120F /* TZSpacerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZSpacerView.swift; sourceTree = "<group>"; };
+		94C67DDA1BE69B5800BC120F /* TZStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZStackView.h; sourceTree = "<group>"; };
+		94C67DDB1BE69B5800BC120F /* TZStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZStackView.swift; sourceTree = "<group>"; };
+		94C67DDC1BE69B5800BC120F /* TZStackViewAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZStackViewAlignment.swift; sourceTree = "<group>"; };
+		94C67DDD1BE69B5800BC120F /* TZStackViewDistribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TZStackViewDistribution.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 		94C67DC51BE69A6E00BC120F /* TZStackView Animation Bug */ = {
 			isa = PBXGroup;
 			children = (
+				94C67DD81BE69B2900BC120F /* TZStackView */,
 				94C67DC61BE69A6E00BC120F /* AppDelegate.swift */,
 				94C67DC81BE69A6E00BC120F /* ViewController.swift */,
 				94C67DCA1BE69A6E00BC120F /* Main.storyboard */,
@@ -62,6 +72,18 @@
 				94C67DD21BE69A6E00BC120F /* Info.plist */,
 			);
 			path = "TZStackView Animation Bug";
+			sourceTree = "<group>";
+		};
+		94C67DD81BE69B2900BC120F /* TZStackView */ = {
+			isa = PBXGroup;
+			children = (
+				94C67DD91BE69B5800BC120F /* TZSpacerView.swift */,
+				94C67DDA1BE69B5800BC120F /* TZStackView.h */,
+				94C67DDB1BE69B5800BC120F /* TZStackView.swift */,
+				94C67DDC1BE69B5800BC120F /* TZStackViewAlignment.swift */,
+				94C67DDD1BE69B5800BC120F /* TZStackViewDistribution.swift */,
+			);
+			path = TZStackView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +118,7 @@
 				TargetAttributes = {
 					94C67DC21BE69A6D00BC120F = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = FUC75932N3;
 					};
 				};
 			};
@@ -135,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C67DE01BE69B5800BC120F /* TZStackViewAlignment.swift in Sources */,
+				94C67DDE1BE69B5800BC120F /* TZSpacerView.swift in Sources */,
 				94C67DC91BE69A6E00BC120F /* ViewController.swift in Sources */,
 				94C67DC71BE69A6E00BC120F /* AppDelegate.swift in Sources */,
+				94C67DDF1BE69B5800BC120F /* TZStackView.swift in Sources */,
+				94C67DE11BE69B5800BC120F /* TZStackViewDistribution.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +274,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "TZStackView Animation Bug/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rzgamer.TZStackView-Animation-Bug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -258,7 +287,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "TZStackView Animation Bug/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rzgamer.TZStackView-Animation-Bug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
